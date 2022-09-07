@@ -1,0 +1,50 @@
+[
+    {
+        "name": "src",
+        "files": [
+            {
+                "name": "adapters",
+                "files": [
+                    {
+                        "name": "in",
+                        "files": [
+                            {
+                                "name": "http",
+                                "files": [
+                                    {
+                                        "name": "server",
+                                        "content": ""
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+            
+                        "name": "out",
+                        "files": [
+        
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "business",
+                "files": [
+                    {
+                        "name": "useCases",
+                        "files": []
+                    },
+                    {
+                        "name": "dtos",
+                        "files": []
+                    },
+                    {
+                        "name": "ports",
+                        "files": []
+                    }
+                ]
+            }
+        ]
+    }
+]

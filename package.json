@@ -1,0 +1,16 @@
+{
+  "name": "microarch",
+  "version": "1.0.0",
+  "description": "This project aims to assist in the creation of folder architecture in order to accelerate the process of creating microservices.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "bin": {
+    "create-architecture": "./src/bin/execute.js"
+  },
+  "preferGlobal": true,
+  "keywords": [],
+  "author": "",
+  "license": "MIT"
+}

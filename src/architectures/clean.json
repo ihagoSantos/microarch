@@ -1,0 +1,56 @@
+[
+    {
+        "name": "src",
+        "files": [
+            {
+                "name": "application",
+                "files": [
+                    {
+                        "name": "repositories",
+                        "files": [
+                            
+                        ]
+                    },
+                    {
+                        "name": "useCases",
+                        "files": [
+                            
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "core",
+                "files": [
+                    {
+                        "name": "logic",
+                        "files": [
+                            {
+                                "name": "entity",
+                                "content": "export abstract class Entity<T> {\n    public props: T;\n\n    constructor(props: T){\n        this.props = props;\n    }\n}"
+                            }
+                        ]
+                    }
+                ]
+            },
+            {
+                "name": "domain",
+                "files": []
+            },
+            {
+                "name": "infra",
+                "files": [
+                    {
+                        "name": "http",
+                        "files": [
+                            {
+                                "name": "server"
+                            }
+                        ]
+                    }
+                ]
+            }
+            
+        ]
+    }
+]
