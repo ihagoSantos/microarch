@@ -26,3 +26,4 @@ https://user-images.githubusercontent.com/7468633/188960754-c7ad4ec7-4231-4a55-b
 [ ] permitir que o usuário faça upload do template para pasta de arquiteturas do pacote<br>
 [ ] permitir que o usuário informe módulos que serão instalados pelo pacote e fazer a instalação automaticamente<br>
 [ ] criar templates com arquivos padrões de controller, server, etc.<br>
+[ ] permitir que o usuário crie a arquitetura dentro de uma pasta específica do projeto.<br>
