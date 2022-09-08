@@ -22,8 +22,8 @@ https://user-images.githubusercontent.com/7468633/188960754-c7ad4ec7-4231-4a55-b
 [ ] download folder creation template<br>
 [ ] architecture creation through user-created template<br>
 [ ] improve CLI commands<br>
-[ ] permitir que o usuário escreva template em yaml<br>
-[ ] permitir que o usuário faça upload do template para pasta de arquiteturas do pacote<br>
-[ ] permitir que o usuário informe módulos que serão instalados pelo pacote e fazer a instalação automaticamente<br>
-[ ] criar templates com arquivos padrões de controller, server, etc.<br>
-[ ] permitir que o usuário crie a arquitetura dentro de uma pasta específica do projeto.<br>
+[ ] allow user to write architecture template in yaml<br>
+[ ] allow user to upload architecture template to package architectures folder<br>
+[ ] allow the user to inform modules that will be installed by the package and perform the installation automatically<br>
+[ ] create templates with standard files for controller, server, etc.<br>
+[ ] allow the user to create the architecture within a specific project folder.<br>
