@@ -1,5 +1,5 @@
 # microarch
-This project aims to assist in the creation of folder architecture in order to accelerate the process of creating microservices.
+This project aims to assist in the creation of folder architecture in order to accelerate the process of creating and standardizing projects such as micro services, micro front-end, etc.
 
 # creation model
 ```
