@@ -1,0 +1,14 @@
+extension: ts
+structure:
+  src:
+    adapters:
+      in:
+        http:
+          - server
+      out:
+        database:
+          - index
+    business:
+      useCases:
+      dtos:
+      ports:

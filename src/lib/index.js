@@ -1,56 +1,17 @@
-import fs from 'fs/promises';
-import path from 'path';
-import { fileURLToPath } from 'url';
+import FilesManager from "./FilesManager.js";
+import StructureManager from "./StructureManager.js";
+
 
 async function createArchitecture(name, extension){
-    const architecture = await readFile(name)
-    await createStructure(architecture, extension)
-}
+    const filesManager = new FilesManager();
+    const structureManager = new StructureManager(filesManager);
+    // const architecture = await filesManager.getArchitectureAsJson(name);
+    const architecture = await filesManager.getArchitectureAsYaml(name)
+    console.log('architecture', JSON.stringify(architecture))
+    if(!extension)
+        extension = architecture.extension;
 
-async function readFile(filename) {
-    const __filename = fileURLToPath(import.meta.url);
-    const __dirname = path.dirname(__filename);
-    const filePath = path.join(__dirname, `../architectures/${filename}.json`)
-    const data = await fs.readFile(filePath, 'utf-8');
-    return JSON.parse(data);
-}
-
-async function createStructure(template, extension, pathRoot) {
-    if(!template || template.length === 0){
-        return;
-    }
-    
-    for(let t of template){
-        try {
-            await fs.access(t.name)
-        } catch (error) {
-            const path = pathRoot ? pathRoot + '/' + t.name: t.name;
-            if(!t.files){
-                return await createFile(path, extension, t.content)
-            }else {
-                
-                await createFolder(path);
-                await createStructure(t.files, extension, path);
-            }
-        }    
-    }
-
-}
-
-async function createFolder(name){
-    try {
-        await fs.access(name)
-    } catch (error) {
-        await fs.mkdir(name);    
-    }
-}
-
-async function createFile(name, extension = 'js', content = ''){
-    try {
-        await fs.readFile(name)
-    } catch (error) {
-        fs.writeFile(`${name}.${extension || 'js'}`, content)
-    }
+    await structureManager.createStructure(architecture.structure, extension)
 }
 
 export default createArchitecture;
