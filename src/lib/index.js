@@ -1,12 +1,15 @@
-const fs = require('fs').promises;
-const path = require('path');
+import fs from 'fs/promises';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
 async function createArchitecture(name, extension){
     const architecture = await readFile(name)
-    createStructure(architecture, extension)
+    await createStructure(architecture, extension)
 }
 
 async function readFile(filename) {
+    const __filename = fileURLToPath(import.meta.url);
+    const __dirname = path.dirname(__filename);
     const filePath = path.join(__dirname, `../architectures/${filename}.json`)
     const data = await fs.readFile(filePath, 'utf-8');
     return JSON.parse(data);
@@ -49,6 +52,5 @@ async function createFile(name, extension = 'js', content = ''){
         fs.writeFile(`${name}.${extension || 'js'}`, content)
     }
 }
-module.exports = {
-    createArchitecture
-}
+
+export default createArchitecture;
