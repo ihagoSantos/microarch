@@ -7,7 +7,7 @@ async function createArchitecture(name, extension){
     const structureManager = new StructureManager(filesManager);
     // const architecture = await filesManager.getArchitectureAsJson(name);
     const architecture = await filesManager.getArchitectureAsYaml(name)
-    console.log('architecture', JSON.stringify(architecture))
+
     if(!extension)
         extension = architecture.extension;
 

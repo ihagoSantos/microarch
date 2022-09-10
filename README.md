@@ -19,10 +19,10 @@ https://user-images.githubusercontent.com/7468633/188960754-c7ad4ec7-4231-4a55-b
 # next steps
 
 [x] creation of hexagonal and clean architectures <br>
+[x] allow user to write architecture template in yaml<br>
 [ ] download folder creation template<br>
 [ ] architecture creation through user-created template<br>
 [ ] improve CLI commands<br>
-[ ] allow user to write architecture template in yaml<br>
 [ ] allow user to upload architecture template to package architectures folder<br>
 [ ] allow the user to inform modules that will be installed by the package and perform the installation automatically<br>
 [ ] create templates with standard files for controller, server, etc.<br>
