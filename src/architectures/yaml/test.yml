@@ -1,0 +1,15 @@
+extension: js
+structure:
+  src:
+    adapters:
+      in:
+        http:
+          - C:\Users\ihago\Documents\Projects\test\test.js
+          - server
+      out:
+        database:
+          - index
+    business:
+      useCases:
+      dtos:
+      ports:

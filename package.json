@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "This project aims to assist in the creation of folder architecture in order to accelerate the process of creating microservices.",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -12,5 +13,8 @@
   "preferGlobal": true,
   "keywords": [],
   "author": "",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "js-yaml": "^4.1.0"
+  }
 }

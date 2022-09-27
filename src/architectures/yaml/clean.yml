@@ -1,0 +1,13 @@
+extension: ts
+structure:
+  src:
+    application:
+      repositories:
+      useCases:
+    core:
+      logic:
+      - entity
+    domain:
+    infra:
+      http:
+        - server
